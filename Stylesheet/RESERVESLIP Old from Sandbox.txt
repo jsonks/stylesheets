@@ -1,0 +1,48 @@
+<font face="sans-serif">
+<h3>Date: <<today>></h3>
+
+<h1> Transfer to/Hold in <<branches.branchname>></h1>
+
+<h5><<borrowers.surname>>, <<borrowers.firstname>></h5>
+<ul>
+    <li><<borrowers.cardnumber>></li>
+    <li><<borrowers.phone>></li>
+    <li><<borrowers.email>></li>
+</ul>
+<br />
+<h2>ITEM ON HOLD</h2>
+<h5><<biblio.title>></h5>
+<h4><<biblio.author>></h4>
+<ul>
+   <li><<items.barcode>></li>
+   <li><<items.itemcallnumber>></li>
+   <li><<reserves.waitingdate>></li>
+</ul>
+<p>Notes:
+<pre><<reserves.reservenotes>></pre>
+</p>
+
+<hr>
+
+<h4>Date: <<today>></h4>
+
+<h2> Transfer to/Hold in: <<branches.branchname>></h2>
+<br/>
+
+<h4><<borrowers.surname>>, <<borrowers.firstname>></h4>
+<<borrowers.cardnumber>><br/>
+<<borrowers.phone>><br/>
+<<borrowers.email>><br />
+<br/>
+<br/>
+<h2>ITEM ON HOLD</h2>
+<h3><<biblio.title>></h3>
+<h4><<biblio.author>></h4>
+Barcode: <<items.barcode>><br/>
+Call number: <<items.itemcallnumber>><br/>
+Owned by: <<items.homebranch>>
+
+<p>Notes:
+<pre><<reserves.reservenotes>></pre>
+</p>
+</font>
